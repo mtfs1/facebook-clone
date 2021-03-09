@@ -1,0 +1,19 @@
+#initial-page-left-menu {
+    width: 300px;
+    height: calc(100vh - 58px);
+    padding: 15px;
+    position: fixed;
+    top: 58px;
+}
+
+#initial-page-left-menu a {
+    display: block;
+    color: #ddd;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#initial-page-left-menu a:hover {
+    background-color: #fff2;
+}

@@ -6,7 +6,13 @@ import Icon from "./facebook-icon"
 import TButton from "./toolbar-button"
 import SButton from "./settings-button"
 
+import { useStore } from "./../../store"
+
 function Header() {
+    const [store, setStore] = useStore()
+
+    const user = store.user.name
+
     return (
         <header id="main-header">
             <div id="home-search">
@@ -25,7 +31,7 @@ function Header() {
             <div id="settings">
                 <div id="user">
                     <img src="/img/user.svg"/>
-                    <span>Matheus</span>
+                    <span>{user.split(" ")[0]}</span>
                 </div>
                 <SButton src="/img/plus.svg"/>
                 <SButton src="/img/chat.svg"/>
