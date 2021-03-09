@@ -1,0 +1,66 @@
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #242526;
+    border-bottom: 1px solid #393a3b;
+}
+
+#home-search {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+#home-search label {
+    margin-left: 1rem;
+    background-color: #3a3b3c;
+    border-radius: 2rem;
+}
+
+#home-search input {
+    display: block;
+    margin-left: .25rem;
+    width: 15rem;
+    padding: .6rem;
+    outline: none;
+    border: none;
+    background-color: #3a3b3c;
+    border-radius: 2rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 480;
+}
+
+#settings {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#user {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+#user:hover {
+    background-color: #3a3b3c;
+}
+
+#user img {
+    height: 2rem;
+}
+
+#user span {
+    margin-left: .5rem;
+    color: #ddd;
+    font-weight: 500;
+}
+
+#toolbar {
+    display: flex;
+}
