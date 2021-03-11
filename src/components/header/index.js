@@ -11,8 +11,8 @@ import { useStore } from "./../../store"
 function Header() {
     const [store, setStore] = useStore()
 
-    const user = store.user.name
-
+    const user = store.user
+    
     return (
         <header id="main-header">
             <div id="home-search">
@@ -30,8 +30,8 @@ function Header() {
             </div>
             <div id="settings">
                 <div id="user">
-                    <img src="/img/user.svg"/>
-                    <span>{user.split(" ")[0]}</span>
+                    <img src={user.imageLink} className="profile-image"/>
+                    <span>{user.name.split(" ")[0]}</span>
                 </div>
                 <SButton src="/img/plus.svg"/>
                 <SButton src="/img/chat.svg"/>

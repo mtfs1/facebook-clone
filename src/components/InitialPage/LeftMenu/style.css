@@ -7,13 +7,20 @@
 }
 
 #initial-page-left-menu a {
-    display: block;
+    display: flex;
     color: #ddd;
     font-weight: 600;
     padding: 10px;
     border-radius: 10px;
+    align-items: center;
 }
 
 #initial-page-left-menu a:hover {
     background-color: #fff2;
+}
+
+#initial-page-left-menu a img.icon {
+    width: 25px;
+    margin-right: .5rem;
+    filter: invert(80%);
 }

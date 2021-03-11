@@ -41,11 +41,10 @@
 }
 
 #user {
-    height: 80%;
     display: flex;
     align-items: center;
     border-radius: 2rem;
-    padding: .5rem;
+    padding: 6px 15px 6px 6px;
     cursor: pointer;
 }
 
@@ -53,16 +52,27 @@
     background-color: #3a3b3c;
 }
 
-#user img {
-    height: 2rem;
+.profile-image {
+    margin-right: .5rem;
+    height: 25px;
+    border-radius: 2rem;
 }
 
 #user span {
-    margin-left: .5rem;
     color: #ddd;
     font-weight: 500;
 }
 
 #toolbar {
     display: flex;
+}
+
+@media (max-width: 1200px) {
+    #user {
+        display: none;
+    }
+
+    #home-search input {
+        display: none;
+    }
 }
