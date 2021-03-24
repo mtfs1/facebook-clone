@@ -1,0 +1,11 @@
+main {
+    width: 600px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline {
+    width: 500px;
+}
